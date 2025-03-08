@@ -19,7 +19,7 @@ wait(2)
 if _G.AutoRob == true then warn("Auto Rob already loaded.") return nil end
 
 _G.AutoRob = true
-queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/NtReadVirtualMemory/Open-Source-Scripts/refs/heads/main/Mad%20City%20Chapter%201/Auto%20Rob.lua'))()")
+queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/YagmurMelekHanci/Mad-City-AutoRob/refs/heads/main/Yagmur%20Melek%20Hanci%20Mad%20City%20Chapter%201'))()")
 
 for i = 1,100 do
    print("Made by YagmurMelekHanci / YagmurMelek (on dc)")
