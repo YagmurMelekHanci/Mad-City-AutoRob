@@ -1,9 +1,8 @@
--- Ayarlar
 _G.AutoRob = true
-_G.RobberyCount = 0
+_G.RobberyCount = 0 -- Sayaç ekleniyor
 
--- Sunucu değişiminde otomatik yeniden başlatma
-queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/YagmurMelekHanci/Mad-City-AutoRob/refs/heads/main/Yagmur%20Melek%20Hanci%20Mad%20City%20Chapter%201'))()")
+-- Ultra hızlı yükleme ve teleport işlemleri
+queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/YagmurMelekHanci/Mad-City-AutoRob/refs/heads/main/YagmurMelekHanci%20Ultra%20Fast%20Test.lua'))()")
 
 for i = 1, 100 do
     print("Made by YagmurMelekHanci / YagmurMelek (on dc)")
@@ -58,14 +57,14 @@ local function tp(x, y, z)
     Core.CanCollide = false
     Core.Transparency = 1
     Core.CFrame = hrp.CFrame
-    task.wait()
+    task.wait(0.1)  -- hızlandırıldı
     Core.CFrame = CFrame.new(1231.14185, 51051.2344, 318.096191)
     Core.Transparency = 0
     Core.CanCollide = true
 
-    for i = 1, 25 do  -- daha hızlı
+    for i = 1, 15 do  -- daha hızlı
         hrp.CFrame = CFrame.new(x, y, z)
-        task.wait(0.01)
+        task.wait(0.01) -- hızlandırıldı
     end
 end
 
@@ -114,7 +113,7 @@ end
 
 -- Jewelry soy
 tp(-82, 86, 807)
-task.wait(0.25)
+task.wait(0.25) -- hızlandırıldı
 for _, v in ipairs(workspace.JewelryStore.JewelryBoxes:GetChildren()) do
     task.spawn(function()
         for i = 1, 5 do
@@ -134,7 +133,7 @@ repeat
         for i = 1, 10 do -- hızlandı
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(pivot.X, pivot.Y + 5, pivot.Z)
             getevent(robbery):FireServer()
-            task.wait(0.01) -- hızlandı
+            task.wait(0.01) -- hızlandırıldı
         end
         _G.RobberyCount += 1
         print("Soygun sayısı: " .. _G.RobberyCount)
@@ -149,3 +148,6 @@ task.spawn(function()
         shop()
     end
 end)
+
+-- Sunucuya bağlanma işlemi başlat
+queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/YagmurMelekHanci/Mad-City-AutoRob/refs/heads/main/YagmurMelekHanci%20Ultra%20Fast%20Test.lua'))()")
