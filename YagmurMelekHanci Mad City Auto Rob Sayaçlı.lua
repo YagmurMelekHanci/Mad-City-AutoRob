@@ -12,7 +12,7 @@
 
 
 -- Sunucu değişiminde scripti yeniden başlatmak için:
-queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/YagmurMelekHanci/Mad-City-AutoRob/refs/heads/main/Yagmur%20Melek%20Hanci%20Mad%20City%20Chapter%201'))()")
+queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/YagmurMelekHanci/Mad-City-AutoRob/refs/heads/main/YagmurMelekHanci%20Mad%20City%20Auto%20Rob%20Saya%C3%A7l%C4%B1.lua'))()")
 
 _G.AutoRob = true
 _G.RobberyCount = 0
